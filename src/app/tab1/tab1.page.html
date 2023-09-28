@@ -9,7 +9,7 @@
           <ion-icon name="notifications-outline"></ion-icon>
         </ion-button>
         <ion-avatar>
-          <img src="caminho-para-foto-do-usuario" alt="Foto do usuário" /> -->
+          <img src="assets/icon/usuario.jpg" alt="Foto do usuário" />
         </ion-avatar>
       </ion-buttons>
     </ion-toolbar>
@@ -24,24 +24,11 @@
       <ion-card-title>Recomendados</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <swiper-container>
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
-      </swiper-container>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Favoritos</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <swiper-container>
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
-      </swiper-container>
+      <ion-list>
+        <ion-item *ngFor="let vaga of vagasRecomendadas">
+          {{ vaga.nome }} <br> {{ vaga.local }} <br> {{ vaga.tipo }}
+        </ion-item>
+      </ion-list>
     </ion-card-content>
   </ion-card>
 </ion-content>

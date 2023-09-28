@@ -1,17 +1,27 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Favoritos
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content>
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Favoritos</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Favoritos</ion-title>
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon name="filter-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-list>
+    <ion-item *ngFor="let vaga of vagasFavoritadas">
+      <ion-thumbnail slot="start">
+        <img src="" alt="Logo da Empresa" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ vaga.nome }}</h2>
+        <p>{{ vaga.empresa }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
