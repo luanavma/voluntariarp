@@ -1,0 +1,22 @@
+ion-content {
+  background-color: #4640de;
+  color: white;
+  --ion-content-background: transparent;
+  --ion-content-padding: 0;
+  --ion-background-color: transparent;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente todo o conteúdo */
+  justify-content: center;
+  height: 100%;
+}
+
+.onboarding-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.onboarding-content img {
+  max-width: 100%; /* Manter a imagem dentro da largura da tela */
+  height: auto; /* Manter a proporção da imagem */
+  margin-top: 200px;
+}
