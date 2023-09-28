@@ -11,7 +11,6 @@ register();
 export class Tab1Page {
   saudacao: string;
   vagasRecomendadas: Array<any>;
-  // vagasFavoritas: Array<any>;
 
   constructor() {
     const horaAtual = new Date().getHours();
@@ -28,27 +27,26 @@ export class Tab1Page {
         nome: 'Técnico de Informática',
         local: 'Canal Informática',
         tipo: 'Presencial - 1h/semanal',
+        logoEmpresa: 'assets/icon/logo1.png',
       },
       {
         nome: 'Suporte de Sistemas',
         local: 'Universidade',
         tipo: 'Presencial - 1h/semanal',
+        logoEmpresa: 'assets/icon/logo2.png',
       },
       {
         nome: 'Monitor de Informática',
         local: 'Escola Pública',
         tipo: 'Presencial - 1h/semanal',
+        logoEmpresa: 'assets/icon/logo3.png',
       },
       {
         nome: 'Editor de Vídeos',
         local: 'Comunidade Local',
         tipo: 'Presencial - 1h/semanal',
+        logoEmpresa: 'assets/icon/logo4.png',
       },
     ];
-    // this.vagasFavoritas = [
-    //   { titulo: 'Vaga Favorita 1', local: 'Local Favorito 1' },
-    //   { titulo: 'Vaga Favorita 2', local: 'Local Favorito 2' },
-    //   // ...
-    // ];
   }
 }

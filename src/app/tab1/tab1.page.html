@@ -25,10 +25,15 @@
     </ion-card-header>
     <ion-card-content>
       <ion-list>
-        <ion-item *ngFor="let vaga of vagasRecomendadas">
-          {{ vaga.nome }} <br> {{ vaga.local }} <br> {{ vaga.tipo }}
+        <ion-item *ngFor="let vaga of vagasRecomendadas" class="custom-item">
+          <ion-thumbnail slot="start" class="custom-thumbnail">
+            <ion-img [src]="vaga.logoEmpresa" class="custom-logo"></ion-img>
+          </ion-thumbnail>
+          <ion-label class="ion-text ion-text-start">
+            <h2 class="custom-text-weight">{{ vaga.nome }}</h2>
+            <p>{{ vaga.local }}</p>
+            <p class="custom-text-color">{{ vaga.tipo }}</p>
+          </ion-label>
         </ion-item>
       </ion-list>
     </ion-card-content>
-  </ion-card>
-</ion-content>
