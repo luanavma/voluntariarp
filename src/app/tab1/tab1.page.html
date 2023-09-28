@@ -1,17 +1,47 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Home
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content>
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Home</ion-title>
+      <ion-title>
+        {{ saudacao }}, Luana
+      </ion-title>
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon name="notifications-outline"></ion-icon>
+        </ion-button>
+        <ion-avatar>
+          <img src="caminho-para-foto-do-usuario" alt="Foto do usuário" /> -->
+        </ion-avatar>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-toolbar>
+    <ion-searchbar placeholder="Procure sua vaga voluntária aqui"></ion-searchbar>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Recomendados</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <swiper-container>
+        <swiper-slide>Slide 1</swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+      </swiper-container>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Favoritos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <swiper-container>
+        <swiper-slide>Slide 1</swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+      </swiper-container>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

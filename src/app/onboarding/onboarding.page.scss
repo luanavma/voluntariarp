@@ -5,7 +5,7 @@ ion-content {
   --ion-content-padding: 0;
   --ion-background-color: transparent;
   display: flex;
-  align-items: center; /* Centraliza verticalmente todo o conteúdo */
+  align-items: center;
   justify-content: center;
   height: 100%;
 }
@@ -16,7 +16,7 @@ ion-content {
 }
 
 .onboarding-content img {
-  max-width: 100%; /* Manter a imagem dentro da largura da tela */
-  height: auto; /* Manter a proporção da imagem */
+  max-width: 100%;
+  height: auto;
   margin-top: 200px;
 }
