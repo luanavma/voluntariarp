@@ -28,24 +28,28 @@ export class Tab1Page {
         local: 'Canal Informática',
         tipo: 'Presencial - 1h/semanal',
         logoEmpresa: 'assets/icon/logo1.png',
+        favorito: false,
       },
       {
         nome: 'Suporte de Sistemas',
         local: 'Universidade',
         tipo: 'Presencial - 1h/semanal',
         logoEmpresa: 'assets/icon/logo2.png',
+        favorito: false,
       },
       {
         nome: 'Monitor de Informática',
         local: 'Escola Pública',
         tipo: 'Presencial - 1h/semanal',
         logoEmpresa: 'assets/icon/logo3.png',
+        favorito: false,
       },
       {
         nome: 'Editor de Vídeos',
         local: 'Comunidade Local',
         tipo: 'Presencial - 1h/semanal',
         logoEmpresa: 'assets/icon/logo4.png',
+        favorito: false,
       },
     ];
   }

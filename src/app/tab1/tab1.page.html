@@ -1,6 +1,6 @@
-<ion-content>
-  <ion-header>
-    <ion-toolbar>
+<ion-content class="content">
+  <ion-header class="header">
+    <ion-toolbar class="toolbar">
       <ion-title>
         {{ saudacao }}, Luana
       </ion-title>
@@ -9,31 +9,31 @@
           <ion-icon name="notifications-outline"></ion-icon>
         </ion-button>
         <ion-avatar>
-          <img src="assets/icon/usuario.jpg" alt="Foto do usuário" />
+          <img class="userphoto" src="assets/icon/usuario.jpg" alt="Foto do usuário" />
         </ion-avatar>
       </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
   <ion-toolbar>
-    <ion-searchbar placeholder="Procure sua vaga voluntária aqui"></ion-searchbar>
+    <ion-searchbar class="searchbar" placeholder="Procure sua vaga voluntária aqui"></ion-searchbar>
   </ion-toolbar>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Recomendados</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-list>
-        <ion-item *ngFor="let vaga of vagasRecomendadas" class="custom-item">
-          <ion-thumbnail slot="start" class="custom-thumbnail">
-            <ion-img [src]="vaga.logoEmpresa" class="custom-logo"></ion-img>
-          </ion-thumbnail>
-          <ion-label class="ion-text ion-text-start">
-            <h2 class="custom-text-weight">{{ vaga.nome }}</h2>
-            <p>{{ vaga.local }}</p>
-            <p class="custom-text-color">{{ vaga.tipo }}</p>
-          </ion-label>
-        </ion-item>
-      </ion-list>
-    </ion-card-content>
+  <ion-card-header>
+    <ion-card-title>Vagas Recomendadas</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item *ngFor="let vaga of vagasRecomendadas" class="custom-item">
+        <ion-thumbnail slot="start" class="custom-thumbnail">
+          <ion-img [src]="vaga.logoEmpresa" class="custom-logo"></ion-img>
+        </ion-thumbnail>
+        <ion-label class="ion-text ion-text-start">
+          <h2 class="custom-text-weight">{{ vaga.nome }}</h2>
+          <p>{{ vaga.local }}</p>
+          <p class="custom-text-color">{{ vaga.tipo }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-content>

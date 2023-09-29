@@ -1,3 +1,26 @@
+.searchbar {
+  padding: 50px 20px;
+  text-align: center;
+  align-self: center;
+  max-width: 98%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.searchbar-input sc-ion-searchbar-ios {
+  padding: 20px;
+}
+
+.toolbar {
+  --ion-background-color: #ffffff; /* Defina a cor de fundo desejada, neste caso, branco (#ffffff) */
+}
+
+.userphoto {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
 .custom-text-color {
   color: #4640de;
 }
@@ -19,4 +42,12 @@
   margin-left: 10px;
   width: 40px;
   height: 40px;
+}
+
+ion-content,
+ion-title,
+ion-searchbar,
+h2,
+p {
+  font-family: Inter;
 }
