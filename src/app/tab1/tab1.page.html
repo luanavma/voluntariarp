@@ -16,13 +16,13 @@
   </ion-header>
 
   <ion-toolbar>
-    <ion-searchbar class="searchbar" placeholder="Procure sua vaga voluntária aqui" [(ngModel)]="termoPesquisa" (ionInput)="pesquisarVagas()"></ion-searchbar>
+    <ion-searchbar class="searchbar custom-placeholder" placeholder="Procure sua vaga voluntária aqui" [(ngModel)]="termoPesquisa" (ionInput)="pesquisarVagas()"></ion-searchbar>
   </ion-toolbar>
 
   <ion-card-header>
     <ion-card-title>Vagas Recomendadas</ion-card-title>
   </ion-card-header>
-  <ion-card-content>
+  <ion-card-content class="">
     <ion-list>
       <ion-item *ngFor="let vaga of vagasPesquisadas" class="custom-item">
         <ion-thumbnail slot="start" class="custom-thumbnail">

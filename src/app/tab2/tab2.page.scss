@@ -5,3 +5,19 @@ h2,
 p {
   font-family: Inter;
 }
+
+ion-card-content {
+  ion-item {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ededed;
+  }
+}
+
+.custom-text-color {
+  color: #4640de;
+}
+
+.custom-text-weight {
+  font-weight: bold;
+}
