@@ -1,8 +1,8 @@
 <ion-content class="content">
   <ion-header class="header">
     <ion-toolbar class="toolbar">
-      <ion-title>
-        {{ saudacao }}, Luana
+      <ion-title class="greetings">
+        {{ saudacao }},<br> Luana Machado
       </ion-title>
       <ion-buttons slot="end">
         <ion-button>
@@ -16,7 +16,7 @@
   </ion-header>
 
   <ion-toolbar>
-    <ion-searchbar class="searchbar" placeholder="Procure sua vaga voluntária aqui"></ion-searchbar>
+    <ion-searchbar class="searchbar" placeholder="Procure sua vaga voluntária aqui" [(ngModel)]="termoPesquisa" (ionInput)="pesquisarVagas()"></ion-searchbar>
   </ion-toolbar>
 
   <ion-card-header>
@@ -24,7 +24,7 @@
   </ion-card-header>
   <ion-card-content>
     <ion-list>
-      <ion-item *ngFor="let vaga of vagasRecomendadas" class="custom-item">
+      <ion-item *ngFor="let vaga of vagasPesquisadas" class="custom-item">
         <ion-thumbnail slot="start" class="custom-thumbnail">
           <ion-img [src]="vaga.logoEmpresa" class="custom-logo"></ion-img>
         </ion-thumbnail>

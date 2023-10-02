@@ -13,15 +13,21 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-list>
-    <ion-item *ngFor="let vaga of vagasFavoritadas">
-      <ion-thumbnail slot="start">
-        <img src="" alt="Logo da Empresa" />
-      </ion-thumbnail>
-      <ion-label>
-        <h2>{{ vaga.nome }}</h2>
-        <p>{{ vaga.empresa }}</p>
-      </ion-label>
-    </ion-item>
-  </ion-list>
+  <ion-card-header>
+    <ion-card-title>Vagas Favoritadas</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item *ngFor="let vaga of vagasFavoritadas" class="custom-item">
+        <ion-thumbnail slot="start" class="custom-thumbnail">
+          <ion-img [src]="vaga.logoEmpresa" class="custom-logo"></ion-img>
+        </ion-thumbnail>
+        <ion-label class="ion-text ion-text-start">
+          <h2 class="custom-text-weight">{{ vaga.nome }}</h2>
+          <p>{{ vaga.local }}</p>
+          <p class="custom-text-color">{{ vaga.tipo }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
 </ion-content>

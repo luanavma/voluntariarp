@@ -11,6 +11,8 @@ register();
 export class Tab1Page {
   saudacao: string;
   vagasRecomendadas: Array<any>;
+  vagasPesquisadas: Array<any>;
+  termoPesquisa: string = '';
 
   constructor() {
     const horaAtual = new Date().getHours();
@@ -52,5 +54,16 @@ export class Tab1Page {
         favorito: false,
       },
     ];
+    this.vagasPesquisadas = this.vagasRecomendadas;
+  }
+
+  pesquisarVagas() {
+    this.vagasPesquisadas = this.vagasRecomendadas.filter((vaga) => {
+      return (
+        vaga.nome.toLowerCase().includes(this.termoPesquisa.toLowerCase()) ||
+        vaga.local.toLowerCase().includes(this.termoPesquisa.toLowerCase()) ||
+        vaga.tipo.toLowerCase().includes(this.termoPesquisa.toLowerCase())
+      );
+    });
   }
 }
